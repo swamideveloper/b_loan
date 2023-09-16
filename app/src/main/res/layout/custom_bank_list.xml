@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/white_rectangle_box"
+    android:clickable="true"
+    android:orientation="horizontal"
+    android:padding="@dimen/_15sdp">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bank_state_bank_of_india" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_weight="1"
+        android:fontFamily="@font/poppins_medium"
+        android:singleLine="true"
+        android:text="State Bank Of India"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_inarrow" />
+
+</LinearLayout>

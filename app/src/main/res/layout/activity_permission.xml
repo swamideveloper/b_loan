@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PermissionActivity">
+
+    <TextView
+        android:id="@+id/permissionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/required_permission"
+        android:textSize="@dimen/_17sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/permissionTextView"
+        app:layout_constraintStart_toStartOf="@+id/permissionTextView"
+        app:layout_constraintTop_toBottomOf="@+id/permissionTextView" />
+
+    <ImageView
+        android:id="@+id/folderImageView"
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:src="@drawable/ic_folder_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view1" />
+
+    <TextView
+        android:id="@+id/storageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:text="Storage Access"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toEndOf="@+id/folderImageView"
+        app:layout_constraintTop_toTopOf="@+id/folderImageView" />
+
+    <TextView
+        android:id="@+id/extraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Allow this permission to access photos and \n videos on your device."
+        android:textColor="#545454"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintStart_toEndOf="@+id/folderImageView"
+        app:layout_constraintTop_toBottomOf="@+id/storageTextView" />
+
+    <FrameLayout
+        android:id="@+id/adsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@+id/goaheadTextView" />
+
+    <TextView
+        android:id="@+id/goaheadTextView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_11sdp"
+        android:background="@drawable/app_color_rectangle"
+        android:gravity="center"
+        android:text="GO AHEAD"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

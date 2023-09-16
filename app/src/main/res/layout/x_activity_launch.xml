@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/splash" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/black"
+        app:lottie_fileName="loader.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/txtvtimer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="This Process May Contain Ads"
+        android:textColor="#757575"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

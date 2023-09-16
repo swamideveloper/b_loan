@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.gms.ads.nativead.NativeAdView android:id="@+id/native_ad_view"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/imageView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/adsback"
+        android:id="@+id/ads"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_2sdp"
+
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/_90sdp"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:visibility="visible">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/_130sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <com.google.android.gms.ads.nativead.MediaView
+                    android:id="@+id/media_view"
+                    android:layout_centerInParent="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent" />
+
+                <TextView
+                    android:background="#9C0B0B0B"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="@dimen/_13sdp"
+                    android:text="Ad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+
+            <LinearLayout
+                android:layout_above="@+id/cta"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:gravity="left"
+                    android:id="@+id/primary"
+                    android:layout_gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:id="@+id/rating_bar"
+                    android:isIndicator="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_width="wrap_content"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#8F8F8F"
+                    android:progressTint="#FFCC66"
+                    android:stepSize="0.5"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/secondary"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:textSize="8sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:gravity="center|left"
+                    android:id="@+id/body"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_width="match_parent"
+
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="#000"
+                    android:textSize="8sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:id="@+id/icon"
+                    android:layout_gravity="center"
+                    android:layout_height="0dp"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:backgroundTint="@color/ad_button_color"
+                android:background="@drawable/ad_exit_three"
+                android:gravity="center"
+                android:id="@+id/cta"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="left"
+                android:layout_height="35dp"
+                android:layout_marginHorizontal="5dp"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.gms.ads.nativead.NativeAdView>
+

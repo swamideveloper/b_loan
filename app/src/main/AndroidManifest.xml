@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gopal.fast.vid">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name="com.gopal.fast.vid.NewImplement.MyApplicationClass"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestRawExternalStorageAccess="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PancarcardLoan"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.gopal.fast.vid.PermissionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.ui.StartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.ui.CheckBalanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.ui.MainBankSelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.ui.Locator_NearByPlaces_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.tbel.activities.Splash_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.ActLoanDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.ActBankInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.ActLoanTypes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.ActCheckBankBalance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.AdharCard_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.AdharGuide_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.Calculator_MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.Emi_calc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.EPF_Service_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.EPFService_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.Instant_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.InstantLoan_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.LoanGuide_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.LoanGuide_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.PanCard_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.PanGuide_Details_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.Sip_calc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.CashCountActs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.GSTCalculationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.NewImplement.ui.bankHolidayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gopal.fast.vid.privacyPolice"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>

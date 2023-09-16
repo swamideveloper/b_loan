@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PancarcardLoan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#3D5FCB</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="Theme.PancarcardLoan" parent="Base.Theme.PancarcardLoan">
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <style name="MyEditTextTheme">
+        <item name="colorControlActivated">#3D5FCB</item>
+        <item name="colorControlHighlight">#3D5FCB</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <item name="colorControlNormal">#3D5FCB</item>
+    </style>
+</resources>

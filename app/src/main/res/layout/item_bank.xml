@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/white_rectangle_box"
+        android:orientation="horizontal"
+        android:padding="@dimen/_13sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_allbank" />
+
+        <TextView
+            android:id="@+id/textViewBankName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Bank Holiday"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_inarrow" />
+
+    </LinearLayout>
+
+</LinearLayout>
